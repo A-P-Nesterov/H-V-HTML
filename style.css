@@ -1,0 +1,288 @@
+:root {
+  --font-fam-h: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-blc: rgb(20, 20, 20);
+  --color-org: rgb(191, 96, 36);
+  --color-bgr-grei: rgb(234, 237, 242);
+  --color-btn-text-1: rgb(229, 198, 178);
+  --color-btn-text-2: rgb(191, 96, 36);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+button,
+div {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.conteiner {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: var(--font-fam-h);
+}
+.header {
+  color: #7a7a7a;
+  text-transform: uppercase;
+}
+.header-top-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  padding-bottom: 31px;
+  margin-bottom: 24px;
+}
+.logo-block {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+}
+.list-contekts {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.logo-block h2 {
+  font-size: 14px;
+  color: rgb(67, 74, 92);
+}
+.list-contekts a {
+  font-size: 14px;
+}
+.list-contekts li:nth-child(1) a {
+  color: #576698;
+  text-decoration: underline;
+}
+.list-contekts li:nth-child(2) a {
+  color: #484848;
+}
+.header-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.sait-nav {
+  display: flex;
+  gap: 18px;
+}
+.bizness-nav {
+  display: flex;
+  gap: 18px;
+}
+.header-bottom-nav a {
+  color: #7a7a7a;
+}
+.sait-nav li:nth-child(4) a {
+  color: #141414;
+}
+/* секция банер */
+.banner {
+  border-bottom: 1px solid rgb(122, 122, 122);
+  margin-top: 36px;
+}
+.banner img {
+  margin-bottom: 24px;
+}
+/* стили для заголовка секции информации */
+.info-leisure {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  gap: 27px;
+}
+.info-leisure-sport {
+  grid-column: 1;
+  grid-row: 1;
+}
+.info-leisure-razv {
+  grid-column: 2;
+  grid-row: 1;
+}
+.info-leisure-tur {
+  grid-column: 1;
+  grid-row: 2;
+}
+.info-leisure-spa {
+  grid-column: 2;
+  grid-row: 2;
+}
+.info-leisure-img {
+  width: 555px;
+  height: 300px;
+}
+.section-info {
+  border-bottom: 1px solid rgb(122, 122, 122);
+  padding-bottom: 20px;
+}
+.section-info-h1 {
+  font-family: var(--font-fam-h);
+  color: var(--color-blc);
+  font-size: 64px;
+  width: 735px;
+}
+.section-info-h2 {
+  font-family: var(--font-fam-h);
+  color: var(--color-org);
+  font-size: 28px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+.section-info-h3 {
+  font-family: var(--font-fam-h);
+  color: var(--color-blc);
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 72px;
+}
+/* стили секции с информацией о проживании на курорте */
+.info-accommodation-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  gap: 27px;
+  padding-bottom: 58px;
+}
+.luxury-apartments-reservation {
+  background-image: url(img/houm.jpeg);
+  height: 600px;
+  width: 555px;
+  background-color: var(--color-bgr-grei);
+  padding-left: 34px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
+}
+.df {
+  display: flex;
+  align-items: end;
+}
+.luxury-apartments-reservation {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.info-accommodation-grid h3 {
+  font-size: 24px;
+}
+.luxury-apartments-reservation-h3 {
+  margin-bottom: 24px;
+  color: var(--color-btn-text-1);
+}
+.info-accommodation-favorable-prices {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: var(--color-bgr-grei);
+  width: 540px;
+  padding-top: 84px;
+  padding-left: 73px;
+}
+.info-accommodation-loyalty-program {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: var(--color-bgr-grei);
+  width: 540px;
+  padding-top: 65px;
+  padding-left: 73px;
+}
+.info-accommodation {
+  border-bottom: 1px solid rgb(122, 122, 122);
+}
+.info-accommodation-h2 {
+  font-family: var(--font-fam-h);
+  color: var(--color-org);
+  font-size: 28px;
+  margin-top: 67px;
+  margin-bottom: 31px;
+}
+.info-accommodation-favorable-prices h3 {
+  margin-bottom: 28px;
+}
+.info-accommodation-loyalty-program h3 {
+  margin-bottom: 11px;
+}
+.info-accommodation-loyalty-program p {
+  width: 265px;
+  margin-bottom: 23px;
+}
+.button-blokc {
+  display: flex;
+  gap: 11px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  border-radius: 14px;
+  border: solid 1px var(--color-org);
+}
+.luxury-apartments-reservation .btn {
+  width: 120px;
+  border: solid 1px var(--color-btn-text-1);
+  color: var(--color-btn-text-1);
+}
+.luxury-apartments-reservation .button-blokc div:nth-child(1) {
+  width: 145px;
+  background-color: var(--color-org);
+}
+.luxury-apartments-reservation a {
+  color: var(--color-btn-text-1);
+}
+.info-accommodation-favorable-prices .btn {
+  width: 144px;
+  text-transform: uppercase;
+}
+.info-accommodation-favorable-prices .btn a {
+  color: var(--color-btn-text-2);
+}
+.info-accommodation-favorable-prices .btn img {
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+.info-accommodation-loyalty-program .btn {
+  width: 125px;
+  background-color: var(--color-org);
+  color: var(--color-btn-text-1);
+}
+
+.info-accommodation-loyalty-program .btn a {
+  text-transform: uppercase;
+  color: var(--color-btn-text-1);
+}
+.info-accommodation-loyalty-program .button-blokc div:nth-child(2) {
+  width: 110px;
+  color: var(--color-btn-text-2);
+  background-color: var(--color-bgr-grei);
+}
+.info-accommodation-loyalty-program .button-blokc div:nth-child(2) a {
+  color: var(--color-btn-text-2);
+}
+.info-accommodation-loyalty-program .button-blokc button {
+  width: 125px;
+  background-color: var(--color-org);
+  color: var(--color-btn-text-1);
+  text-transform: uppercase;
+}
+.footer {
+  margin-top: 58px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list li:nth-child(3) p {
+  width: 340px;
+}
