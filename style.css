@@ -283,6 +283,3 @@ div {
   display: flex;
   justify-content: space-between;
 }
-.footer-list li:nth-child(3) p {
-  width: 340px;
-}
