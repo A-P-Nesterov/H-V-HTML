@@ -31,7 +31,6 @@ div {
 .conteiner {
   width: 1142px;
   margin: 0 auto;
-  padding-top: 10px;
   font-family: var(--font-fam-h);
 }
 .header {
@@ -41,9 +40,9 @@ div {
 .header-top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 96px;
   border-bottom: 1px solid rgb(122, 122, 122);
-  padding-bottom: 31px;
-  margin-bottom: 24px;
 }
 .logo-block {
   display: flex;
@@ -72,6 +71,8 @@ div {
 .header-bottom-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 78px;
 }
 .sait-nav {
   display: flex;
@@ -90,41 +91,20 @@ div {
 /* секция банер */
 .banner {
   border-bottom: 1px solid rgb(122, 122, 122);
-  margin-top: 36px;
 }
 .banner img {
   margin-bottom: 24px;
 }
 /* стили для заголовка секции информации */
-.info-leisure {
+.section-info-leisure {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  gap: 27px;
-}
-.info-leisure-sport {
-  grid-column: 1;
-  grid-row: 1;
-}
-.info-leisure-razv {
-  grid-column: 2;
-  grid-row: 1;
-}
-.info-leisure-tur {
-  grid-column: 1;
-  grid-row: 2;
-}
-.info-leisure-spa {
-  grid-column: 2;
-  grid-row: 2;
-}
-.info-leisure-img {
-  width: 555px;
-  height: 300px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 72px;
+  column-gap: 30px;
 }
 .section-info {
   border-bottom: 1px solid rgb(122, 122, 122);
-  padding-bottom: 20px;
+  padding-bottom: 90px;
 }
 .section-info-h1 {
   font-family: var(--font-fam-h);
@@ -144,20 +124,19 @@ div {
   color: var(--color-blc);
   font-size: 14px;
   margin-top: 12px;
-  margin-bottom: 72px;
+  text-transform: uppercase;
 }
 /* стили секции с информацией о проживании на курорте */
 .info-accommodation-grid {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  gap: 27px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   padding-bottom: 58px;
 }
 .luxury-apartments-reservation {
   background-image: url(img/houm.jpeg);
+  background-repeat: no-repeat;
   height: 600px;
-  width: 555px;
   background-color: var(--color-bgr-grei);
   padding-left: 34px;
   padding-bottom: 44px;
@@ -182,7 +161,6 @@ div {
   grid-column: 2;
   grid-row: 1;
   background-color: var(--color-bgr-grei);
-  width: 540px;
   padding-top: 84px;
   padding-left: 73px;
 }
@@ -190,7 +168,6 @@ div {
   grid-column: 2;
   grid-row: 2;
   background-color: var(--color-bgr-grei);
-  width: 540px;
   padding-top: 65px;
   padding-left: 73px;
 }
@@ -219,60 +196,22 @@ div {
   gap: 11px;
 }
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 28px;
+  display: block;
   border-radius: 14px;
   border: solid 1px var(--color-org);
+  padding: 5px 13px 5px 13px;
+  text-transform: uppercase;
 }
-.luxury-apartments-reservation .btn {
-  width: 120px;
+.luxury-apartments-reservation .button-blokc .btn:nth-child(1) {
+  background-color: var(--color-org);
+  border: solid 1px var(--color-btn-text-2);
+  color: var(--color-btn-text-1);
+}
+.luxury-apartments-reservation .button-blokc .btn:nth-child(2) {
   border: solid 1px var(--color-btn-text-1);
   color: var(--color-btn-text-1);
 }
-.luxury-apartments-reservation .button-blokc div:nth-child(1) {
-  width: 145px;
-  background-color: var(--color-org);
-}
-.luxury-apartments-reservation a {
-  color: var(--color-btn-text-1);
-}
-.info-accommodation-favorable-prices .btn {
-  width: 144px;
-  text-transform: uppercase;
-}
-.info-accommodation-favorable-prices .btn a {
-  color: var(--color-btn-text-2);
-}
-.info-accommodation-favorable-prices .btn img {
-  margin-left: 10px;
-  margin-bottom: 2px;
-}
-.info-accommodation-loyalty-program .btn {
-  width: 125px;
-  background-color: var(--color-org);
-  color: var(--color-btn-text-1);
-}
 
-.info-accommodation-loyalty-program .btn a {
-  text-transform: uppercase;
-  color: var(--color-btn-text-1);
-}
-.info-accommodation-loyalty-program .button-blokc div:nth-child(2) {
-  width: 110px;
-  color: var(--color-btn-text-2);
-  background-color: var(--color-bgr-grei);
-}
-.info-accommodation-loyalty-program .button-blokc div:nth-child(2) a {
-  color: var(--color-btn-text-2);
-}
-.info-accommodation-loyalty-program .button-blokc button {
-  width: 125px;
-  background-color: var(--color-org);
-  color: var(--color-btn-text-1);
-  text-transform: uppercase;
-}
 .footer {
   margin-top: 58px;
   margin-bottom: 10px;
