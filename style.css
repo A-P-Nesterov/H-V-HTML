@@ -1,9 +1,9 @@
 :root {
-  --font-fam-h: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-fam-h: "Roboto", sans-serif;
   --color-blc: rgb(20, 20, 20);
   --color-org: rgb(191, 96, 36);
   --color-bgr-grei: rgb(234, 237, 242);
+  --color-foo-text: rgb(66, 66, 66);
   --color-btn-text-1: rgb(229, 198, 178);
   --color-btn-text-2: rgb(191, 96, 36);
 }
@@ -109,6 +109,7 @@ div {
 .section-info-h1 {
   font-family: var(--font-fam-h);
   color: var(--color-blc);
+  text-transform: uppercase;
   font-size: 64px;
   width: 735px;
 }
@@ -202,7 +203,8 @@ div {
   padding: 5px 13px 5px 13px;
   text-transform: uppercase;
 }
-.luxury-apartments-reservation .button-blokc .btn:nth-child(1) {
+.luxury-apartments-reservation .button-blokc .btn:nth-child(1),
+.info-accommodation-loyalty-program .button-blokc .btn:nth-child(1) {
   background-color: var(--color-org);
   border: solid 1px var(--color-btn-text-2);
   color: var(--color-btn-text-1);
@@ -211,14 +213,36 @@ div {
   border: solid 1px var(--color-btn-text-1);
   color: var(--color-btn-text-1);
 }
+.info-accommodation-favorable-prices .btn,
+.info-accommodation-loyalty-program .button-blokc .btn:nth-child(2) {
+  border: solid 1px var(--color-org);
+  color: var(--color-org);
+}
 
 .footer {
-  margin-top: 58px;
-  margin-bottom: 10px;
-  font-family: Montserrat;
-  font-weight: 400;
-}
-.footer-list {
   display: flex;
   justify-content: space-between;
+  height: 185px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.footer a {
+  color: var(--color-foo-text);
+}
+.footer ul:nth-child(1),
+.footer ul:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer ul:nth-child(2) {
+  gap: 20px;
+}
+.footer-privacy-policy li:nth-child(1) a {
+  font-weight: 700;
+}
+.footer-feedback li:nth-child(1) a {
+  font-weight: 700;
+  text-decoration: underline;
 }
