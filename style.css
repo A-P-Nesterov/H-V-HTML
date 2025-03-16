@@ -6,6 +6,7 @@
   --color-foo-text: rgb(66, 66, 66);
   --color-btn-text-1: rgb(229, 198, 178);
   --color-btn-text-2: rgb(191, 96, 36);
+  --color-border-bottom: rgb(122, 122, 122);
 }
 
 body {
@@ -42,7 +43,7 @@ div {
   justify-content: space-between;
   align-items: center;
   height: 96px;
-  border-bottom: 1px solid rgb(122, 122, 122);
+  border-bottom: 1px solid var(--color-border-bottom);
 }
 .logo-block {
   display: flex;
@@ -90,7 +91,7 @@ div {
 }
 /* секция банер */
 .banner {
-  border-bottom: 1px solid rgb(122, 122, 122);
+  border-bottom: 1px solid var(--color-border-bottom);
 }
 .banner img {
   margin-bottom: 24px;
@@ -103,12 +104,13 @@ div {
   column-gap: 30px;
 }
 .section-info {
-  border-bottom: 1px solid rgb(122, 122, 122);
+  border-bottom: 1px solid var(--color-border-bottom);
   padding-bottom: 90px;
 }
 .section-info-h1 {
   font-family: var(--font-fam-h);
   color: var(--color-blc);
+  margin-top: 27px;
   text-transform: uppercase;
   font-size: 64px;
   width: 735px;
@@ -197,16 +199,17 @@ div {
   gap: 11px;
 }
 .btn {
-  display: block;
+  display: inline-flex;
+  gap: 10px;
   border-radius: 14px;
   border: solid 1px var(--color-org);
   padding: 5px 13px 5px 13px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .luxury-apartments-reservation .button-blokc .btn:nth-child(1),
 .info-accommodation-loyalty-program .button-blokc .btn:nth-child(1) {
   background-color: var(--color-org);
-  border: solid 1px var(--color-btn-text-2);
   color: var(--color-btn-text-1);
 }
 .luxury-apartments-reservation .button-blokc .btn:nth-child(2) {
@@ -237,7 +240,7 @@ div {
   gap: 12px;
 }
 .footer ul:nth-child(2) {
-  gap: 20px;
+  gap: 30px;
 }
 .footer-privacy-policy li:nth-child(1) a {
   font-weight: 700;
